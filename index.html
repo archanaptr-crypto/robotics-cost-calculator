@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Robostar Robotics Cost Calculator</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <header>
+            <h1>🤖 Robostar</h1>
+            <h2>Robotics Project Cost Calculator</h2>
+            <p>Calculate the estimated cost of your robotics project.</p>
+        </header>
+
+        <div class="calculator">
+            <div class="project-info">
+            <label for="projectName">Project Name</label>
+            <input
+                type="text"
+                id="projectName"
+                placeholder="e.g. Line Following Robot"
+    >
+        </div>
+
+            <div class="component">
+                <label>Arduino</label>
+                <input type="number" id="arduino" value="1" min="0">
+                <span>K350 each</span>
+            </div>
+
+            <div class="component">
+                <label>Ultrasonic Sensor</label>
+                <input type="number" id="ultrasonic" value="1" min="0">
+                <span>K80 each</span>
+            </div>
+
+            <div class="component">
+                <label>Motor</label>
+                <input type="number" id="motor" value="2" min="0">
+                <span>K150 each</span>
+            </div>
+
+            <div class="component">
+                <label>Wheels</label>
+                <input type="number" id="wheels" value="2" min="0">
+                <span>K100 each</span>
+            </div>
+
+            <div class="component">
+                <label>Battery</label>
+                <input type="number" id="battery" value="1" min="0">
+                <span>K120 each</span>
+            </div>
+
+           <div class="buttons">
+
+            <button type="button" id="calculateButton">
+                Calculate Cost
+            </button>
+
+            <button type="button" id="resetButton" class="reset">
+                 Reset
+            </button>
+
+            <button type="button" id="printButton" class="print">
+                Print Estimate
+            </button>
+
+            </div>
+
+            <div id="result"></div>
+
+        </div>
+
+        <footer>
+            © 2026 Robostar Innovations<br>
+            Building Innovators, Powering Businesses
+        </footer>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
